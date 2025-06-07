@@ -5,9 +5,9 @@ PRODUCT SPECIFICATIONS:
 - Category: Fashion/Clothing
 - Target: indonesia unisex
 - Market Positioning: Premium
-- Order Link: https://mila.orderonline.id/daily-puff-bag
-- Seller Source: https://shopee.co.id/Puffy-Bag-Fenita-Shoulder-Bag-Buble-Import-Tas-Selempang-Wanita-Tas-Wanita-Viral-2023-Tas-Wanita-Korea-Kekinian-Tas-Casual-Tas-Kuliah-i.545628528.23319111993?xptdk=996a1d6b-4bc7-4a9e-98e1-6b7162c2e709
-- Reference: https://www.joopzy.com/
+- Order Link:  
+- Seller Source:  
+- Reference:  
 
 PRICING STRATEGY:
 - Modal Price: Rp 55.000
@@ -16,13 +16,7 @@ PRICING STRATEGY:
 - Display in sticky bottom banner
 
 VISUAL ASSETS:
-- Hero Image: https://b3501020.smushcdn.com/3501020/wp-content/uploads/2023/07/10-1-1200x1200.jpg?lossy=2&strip=1&webp=1
-https://b3501020.smushcdn.com/3501020/wp-content/uploads/2023/07/15-1-1200x1200.jpg?lossy=2&strip=1&webp=1
-https://b3501020.smushcdn.com/3501020/wp-content/uploads/2023/07/13-1200x1200.jpg?lossy=2&strip=1&webp=1
-https://b3501020.smushcdn.com/3501020/wp-content/uploads/2023/07/9-1-1200x1200.jpg?lossy=2&strip=1&webp=1
-https://b3501020.smushcdn.com/3501020/wp-content/uploads/2023/07/5-2-1200x1200.jpg?lossy=2&strip=1&webp=1
-https://b3501020.smushcdn.com/3501020/wp-content/uploads/2023/07/7-2-1200x1200.jpg?lossy=2&strip=1&webp=1
-https://b3501020.smushcdn.com/3501020/wp-content/uploads/2023/07/3-2-1200x1200.jpg?lossy=2&strip=1&webp=1
+ 
 
 CONTENT FRAMEWORK:
 - Tagline: "[TAGLINE_MENARIK]"
@@ -59,6 +53,4 @@ COLOR : Hitam
  
 URL color:
 
-https://down-id.img.susercontent.com/file/sg-11134201-23010-jh7rrogfffmv7f@resize_w450_nl.webp
-
-https://down-id.img.susercontent.com/file/sg-11134201-23010-9hdn8bbfffmv62@resize_w450_nl.webp
+ 
