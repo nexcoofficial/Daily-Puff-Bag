@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Puff Bag - Tas Premium Kekinian</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#F5F5DC',
+                        darkcream: '#E8E4C9',
+                        premium: '#1a1a1a',
+                    },
+                    fontFamily: {
+                        'sans': ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F5F5DC;
+            color: #1a1a1a;
+        }
+        
+        /* Custom animations */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .float {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .testimonial-slider {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        .testimonial-track {
+            display: inline-block;
+            white-space: nowrap;
+            animation: scroll 30s linear infinite;
+        }
+        
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        .testimonial-card {
+            display: inline-block;
+            width: 300px;
+            vertical-align: top;
+            white-space: normal;
+            margin-right: 20px;
+        }
+        
+        /* Hero image animation */
+        .hero-glow {
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+            animation: glow 3s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+            to { box-shadow: 0 0 20px rgba(0,0,0,0.2); }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Sticky Price Banner -->
+    <div class="fixed bottom-0 left-0 right-0 bg-black text-cream py-3 px-4 z-50 shadow-lg">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="text-lg md:text-xl font-bold mb-2 md:mb-0">
+                <span class="line-through text-gray-400 mr-2">Rp292.500</span>
+                <span class="text-2xl text-cream font-extrabold">Rp195.000</span>
+                <span class="ml-2 text-sm bg-red-600 text-white px-2 py-1 rounded">LIHAT DISKON</span>
+            </div>
+            <a href="https://mila.orderonline.id/daily-puff-bag" 
+               class="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold py-2 px-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+               <span class="text-lg">BELI SEKARANG</span>
+               <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-black text-cream py-4 px-4 shadow-md sticky top-0 z-40 fade-in">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold">DAILY PUFF BAG</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#features" class="hover:text-yellow-300 transition duration-200">Keunggulan</a>
+                <a href="#testimonials" class="hover:text-yellow-300 transition duration-200">Testimoni</a>
+                <a href="#order" class="hover:text-yellow-300 transition duration-200">Pesan Sekarang</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-cream focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black py-2 px-4 absolute left-0 right-0 top-full">
+            <a href="#features" class="block py-2 hover:text-yellow-300">Keunggulan</a>
+            <a href="#testimonials" class="block py-2 hover:text-yellow-300">Testimoni</a>
+            <a href="#order" class="block py-2 hover:text-yellow-300">Pesan Sekarang</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-12 md:py-20 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0 fade-in">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-black">
+                    Tas Daily Puff Premium <span class="text-cream">Kekinian</span> 
+                </h1>
+                <p class="text-lg md:text-xl mb-6 text-gray-700">
+                    Hadir dengan desain puff yang unik dan material premium, membuat Anda tampil stylish di setiap kesempatan.
+                </p>
+                <div class="flex flex-wrap gap-4 mb-8">
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <span>Material Premium</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <span>Nyaman Digunakan</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <span>Kapasitas Lapang</span>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="bg-red-100 text-red-800 rounded-lg px-4 py-2 mb-4 md:mb-0 mr-4 flex items-center">
+                        <i class="fas fa-fire mr-2"></i>
+                        <span class="font-bold">TERJUAL <span id="sold-count">782</span>+ HARI INI</span>
+                    </div>
+                    <div class="bg-yellow-100 text-yellow-800 rounded-lg px-4 py-2 flex items-center">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span>Diskon Berakhir dalam: <span id="countdown" class="font-bold">23:59:59</span></span>
+                    </div>
+                </div>
+                <a href="https://mila.orderonline.id/daily-puff-bag" class="mt-8 inline-block bg-gradient-to-r from-black to-gray-800 hover:from-gray-800 hover:to-black text-cream font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    DAPATKAN SEKARANG <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+            <div class="md:w-1/2 relative">
+                <div class="hero-glow float relative z-20">
+                    <img src="https://b3501020.smushcdn.com/3501020/wp-content/uploads/2023/07/10-1-1200x1200.jpg?lossy=2&strip=1&webp=1" 
+                         alt="Daily Puff Bag" 
+                         class="rounded-lg w-full max-w-md mx-auto">
+                </div>
+                <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-black opacity-10 rounded-full z-10"></div>
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-black opacity-5 rounded-full z-10"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <div class="bg-black text-cream py-4">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-4 md:gap-10">
+                <div class="flex items-center">
+                    <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                    <span>Original Produk</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-shipping-fast text-blue-400 mr-2"></i>
+                    <span>Gratis Ongkir</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-shield-alt text-yellow-400 mr-2"></i>
+                    <span>Garansi 7 Hari</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-undo text-purple-400 mr-2"></i>
+                    <span>Pengembalian Mudah</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Color Options -->
+    <section class="py-16 px-4 bg-black">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">PILIHAN WARNA EKSKLUSIF</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-cream p-6 rounded-lg shadow-lg">
+                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-23010-jh7rrogfffmv7f@resize_w450_nl.webp" 
+                         alt="Daily Puff Bag - Hitam" 
+                         class="w-full rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2 text-black">DAILY PUFF - CREAM</h3>
+                    <p class="text-gray-700 mb-4">Warna hitam elegan yang cocok untuk segala gaya dan kesempatan.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-lg font-bold">Rp195.000</span>
+                        <a href="https://mila.orderonline.id/daily-puff-bag" class="bg-black text-cream px-4 py-2 rounded hover:bg-gray-800 transition">Pilih Warna</a>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-23010-9hdn8bbfffmv62@resize_w450_nl.webp" 
+                         alt="Daily Puff Bag - Cream" 
+                         class="w-full rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">DAILY PUFF - HITAM</h3>
+                    <p class="text-gray-600 mb-4">Warna cream yang soft dan premium, mempercantik penampilan sehari-hari.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-lg font-bold">Rp195.000</span>
+                        <a href="https://mila.orderonline.id/daily-puff-bag" class="bg-black text-cream px-4 py-2 rounded hover:bg-gray-800 transition">Pilih Warna</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-16 px-4 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">KEUNGGULAN DAILY PUFF BAG</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-black text-cream w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Material Premium</h3>
+                    <p class="text-gray-700">Dibuat dengan bahan berkualitas tinggi yang tahan lama dan nyaman digunakan sehari-hari.</p>
+                </div>
+                <div class="bg-cream p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-black text-cream w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-tshirt text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Desain Kekinian</h3>
+                    <p class="text-gray-700">Desain puff yang unik dan stylish, membuat Anda tampil beda dari yang lain.</p>
+                </div>
+                <div class="bg-cream p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-black text-cream w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-shopping-bag text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Kapasitas Luas</h3>
+                    <p class="text-gray-700">Dapat menampung semua kebutuhan harian Anda mulai dari makeup hingga tablet.</p>
+                </div>
+                <div class="bg-cream p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-black text-cream w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-user-check text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Multi Fungsi</h3>
+                    <p class="text-gray-700">Cocok untuk berbagai kesempatan baik formal maupun kasual.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="py-16 px-4 bg-darkcream">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">GALERI PRODUK</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://b3501020.smushcdn.com/3501020/wp-content/uploads/2023/07/15-1-1200x1200.jpg?lossy=2&strip=1&webp=1" 
+                         alt="Daily Puff Bag" 
+                         class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://b3501020.smushcdn.com/3501020/wp-content/uploads/2023/07/13-1200x1200.jpg?lossy=2&strip=1&webp=1" 
+                         alt="Daily Puff Bag" 
+                         class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://b3501020.smushcdn.com/3501020/wp-content/uploads/2023/07/5-2-1200x1200.jpg?lossy=2&strip=1&webp=1" 
+                         alt="Daily Puff Bag" 
+                         class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://b3501020.smushcdn.com/3501020/wp-content/uploads/2023/07/9-1-1200x1200.jpg?lossy=2&strip=1&webp=1" 
+                         alt="Daily Puff Bag" 
+                         class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://b3501020.smushcdn.com/3501020/wp-content/uploads/2023/07/7-2-1200x1200.jpg?lossy=2&strip=1&webp=1" 
+                         alt="Daily Puff Bag" 
+                         class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://b3501020.smushcdn.com/3501020/wp-content/uploads/2023/07/3-2-1200x1200.jpg?lossy=2&strip=1&webp=1" 
+                         alt="Daily Puff Bag" 
+                         class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 px-4 bg-black text-cream">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">KATA MEREKA TENTANG DAILY PUFF BAG</h2>
+            <div class="testimonial-slider my-8">
+                <div class="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="bg-gray-800 p-6 rounded-lg h-full">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center text-xl font-bold">R</div>
+                                <div class="ml-4">
+                                    <h4 class="font-bold">Rina Susanto</h4>
+                                    <div class="flex text-yellow-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>"Tasnya sangat premium dan bahannya nyaman dipakai seharian. Desainnya juga unik banget!"</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="bg-gray-800 p-6 rounded-lg h-full">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center text-xl font-bold">D</div>
+                                <div class="ml-4">
+                                    <h4 class="font-bold">Dian Permata</h4>
+                                    <div class="flex text-yellow-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>"Barang sampai dengan cepat dan sesuai gambar. Tasnya lebih cantik dari yang saya bayangkan!"</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="bg-gray-800 p-6 rounded-lg h-full">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center text-xl font-bold">A</div>
+                                <div class="ml-4">
+                                    <h4 class="font-bold">Andre Wijaya</h4>
+                                    <div class="flex text-yellow-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>"Saya beli untuk hadiah ulang tahun pacar, dia sangat suka! Bahannya premium dan packingnya rapi."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="bg-gray-800 p-6 rounded-lg h-full">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center text-xl font-bold">S</div>
+                                <div class="ml-4">
+                                    <h4 class="font-bold">Siti Nurhaliza</h4>
+                                    <div class="flex text-yellow-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>"Ukurannya pas banget buat daily use. Bisa masukin dompet, HP, makeup, bahkan laptop mini!"</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="bg-gray-800 p-6 rounded-lg h-full">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center text-xl font-bold">B</div>
+                                <div class="ml-4">
+                                    <h4 class="font-bold">Budi Santoso</h4>
+                                    <div class="flex text-yellow-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>"Warnanya persis seperti di foto. Kualitas jahitannya rapi dan strap-nya nyaman di pundak."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="bg-gray-800 p-6 rounded-lg h-full">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center text-xl font-bold">L</div>
+                                <div class="ml-4">
+                                    <h4 class="font-bold">Laras Setiadi</h4>
+                                    <div class="flex text-yellow-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>"Beli dua warna karena memang bagus dan harganya worth it. Recommended banget!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="order" class="py-16 px-4 bg-gradient-to-r from-black to-gray-800 text-cream">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">JADI YANG PERTAMA MEMILIKI TAS INI!</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Dapatkan Daily Puff Bag sekarang dengan harga spesial sebelum kembali ke harga normal.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <div class="bg-red-600 text-white px-6 py-3 rounded-full font-bold">
+                    <i class="fas fa-fire mr-2"></i> HARGA PROMO
+                </div>
+                <div class="bg-yellow-600 text-black px-6 py-3 rounded-full font-bold">
+                    <i class="fas fa-truck mr-2"></i> GRATIS ONGKIR
+                </div>
+            </div>
+            <div class="text-3xl font-bold mb-6">
+                <span class="line-through text-gray-400 mr-2">Rp292.500</span>
+                <span class="text-yellow-400">Rp195.000</span>
+            </div>
+            <a href="https://mila.orderonline.id/daily-puff-bag" 
+               class="inline-block bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold py-4 px-12 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300 mb-8">
+               <i class="fas fa-shopping-cart mr-2"></i> BELI SEKARANG
+            </a>
+            <div class="text-sm text-gray-300">
+                <i class="fas fa-info-circle mr-2"></i> Stok terbatas. Pesanan akan diproses dalam 1x24 jam.
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 px-4 bg-cream">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12">PERTANYAAN YANG SERING DIAJUKAN</h2>
+            <div class="space-y-4">
+                <div class="border-b border-gray-200 pb-4">
+                    <button class="faq-btn flex justify-between items-center w-full text-left font-bold text-lg">
+                        <span>Berapa lama waktu pengiriman?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content mt-2 hidden">
+                        <p class="text-gray-700">Pengiriman biasanya memakan waktu 2-5 hari kerja tergantung lokasi Anda. Kami menggunakan jasa pengiriman terpercaya seperti JNE, J&T, dan SiCepat.</p>
+                    </div>
+                </div>
+                <div class="border-b border-gray-200 pb-4">
+                    <button class="faq-btn flex justify-between items-center w-full text-left font-bold text-lg">
+                        <span>Apakah produk ini original?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content mt-2 hidden">
+                        <p class="text-gray-700">Ya, Daily Puff Bag adalah produk original dengan kualitas premium yang dijamin keasliannya. Kami memberikan garansi 7 hari pengembalian jika terdapat cacat produksi.</p>
+                    </div>
+                </div>
+                <div class="border-b border-gray-200 pb-4">
+                    <button class="faq-btn flex justify-between items-center w-full text-left font-bold text-lg">
+                        <span>Bagaimana cara perawatan tas ini?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content mt-2 hidden">
+                        <p class="text-gray-700">Untuk perawatan, hindari kontak langsung dengan air dalam jumlah banyak. Jika kotor, cukup lap dengan kain lembab. Simpan di tempat yang kering dan tidak lembab ketika tidak digunakan.</p>
+                    </div>
+                </div>
+                <div class="border-b border-gray-200 pb-4">
+                    <button class="faq-btn flex justify-between items-center w-full text-left font-bold text-lg">
+                        <span>Apakah bisa COD (Cash on Delivery)?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content mt-2 hidden">
+                        <p class="text-gray-700">Untuk saat ini kami hanya melayani pemesanan secara online melalui link yang tersedia. Kami tidak menyediakan layanan COD demi keamanan dan kenyamanan bersama.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-cream py-8 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="text-2xl font-bold mb-2">DAILY PUFF BAG</div>
+                    <p class="text-sm text-gray-400">Tas premium dengan desain kekinian untuk gaya sehari-hari Anda.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-yellow-300 transition"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="hover:text-yellow-300 transition"><i class="fab fa-whatsapp text-xl"></i></a>
+                    <a href="#" class="hover:text-yellow-300 transition"><i class="fab fa-tiktok text-xl"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>© 2023 Daily Puff Bag. All Rights Reserved.</p>
+                <p class="mt-2">Official Store: <a href="https://shopee.co.id/Puffy-Bag-Fenita-Shoulder-Bag-Buble-Import-Tas-Selempang-Wanita-Tas-Wanita-Viral-2023-Tas-Wanita-Korea-Kekinian-Tas-Casual-Tas-Kuliah-i.545628528.23319111993?xptdk=996a1d6b-4bc7-4a9e-98e1-6b7162c2e709" class="hover:text-yellow-300 underline">Shopee Official Store</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // FAQ Accordion
+        const faqBtns = document.querySelectorAll('.faq-btn');
+        
+        faqBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Countdown Timer
+        function updateCountdown() {
+            const endTime = new Date();
+            endTime.setHours(23, 59, 59); // Set to today's midnight
+            
+            const now = new Date();
+            const diff = endTime - now;
+            
+            if (diff <= 0) {
+                document.getElementById('countdown').textContent = "00:00:00";
+                return;
+            }
+            
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('countdown').textContent = 
+                `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Sold Counter Animation
+        let soldCount = 782;
+        const soldElement = document.getElementById('sold-count');
+        
+        setInterval(() => {
+            soldCount += Math.floor(Math.random() * 3); // Random increment
+            soldElement.textContent = soldCount;
+        }, 30000); // Update every 30 seconds
+    </script>
+</body>
+</html>
